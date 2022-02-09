@@ -20,29 +20,36 @@ html::-webkit-scrollbar {
   background-color: var(--primary-color) !important;
   width: 16px !important;
 }
+
 html::-webkit-scrollbar-track {
   background-color: var(--primary-color) !important;
 }
+
 html::-webkit-scrollbar-thumb {
   border-radius: 16px !important;
   border: 4px solid var(--primary-color) !important;
   background: var(--secondary-color);
 }
+
 html::-webkit-scrollbar-button {
   display: none !important;
   padding: 50px 0;
 }
+
 .scrollbar::-webkit-scrollbar-thumb {
   background-color: var(--secondary-color) !important;
   border-radius: 16px !important;
   border: 5px solid var(--primary-color) !important;
 }
+
 .scrollbar:hover::-webkit-scrollbar-thumb {
   background-color: var(--secondary-color) !important;
 }
+
 html::-webkit-scrollbar-thumb:hover {
   background-color: var(--secondary-color) !important;
 }
+
 @supports (scrollbar-color: red blue) {
   * {
     scrollbar-color: var(--secondary-color) var(--primary-color);
@@ -82,6 +89,7 @@ html::-webkit-scrollbar-thumb:hover {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -91,6 +99,7 @@ html::-webkit-scrollbar-thumb:hover {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -107,39 +116,39 @@ body {
   background-color: var(--primary-color) !important;
 }
 
-.navbar .container-fluid {
+/* .navbar .container-fluid {
   width: 100vw;
   display: flex;
   justify-content: space-around;
-}
+} */
 
-.container-fluid .navbar-collapse {
+/* .container-fluid .navbar-collapse {
   flex-grow: 0;
-}
+} */
 
-.navbar-expand-lg .navbar-nav {
+/* .navbar-expand-lg .navbar-nav {
   gap: 3vw;
-}
+} */
 
-.navbar-brand img {
+/* .navbar-brand img {
   width: 12vw;
-}
+} */
 
-.nav-item .btn {
+/* .nav-item .btn {
   display: none;
-}
+} */
 
-li > .nav-link {
+/* li>.nav-link {
   position: relative;
   color: var(--font-color-primary);
   text-decoration: none;
-}
+} */
 
-li .nav-link:hover {
+/* li .nav-link:hover {
   color: var(--font-color-primary);
-}
+} */
 
-li > .nav-link:before {
+/* li>.nav-link:before {
   content: "";
   position: absolute;
   width: 50%;
@@ -152,14 +161,14 @@ li > .nav-link:before {
   transform: scaleX(0);
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
-}
+} */
 
-li > .nav-link:hover:before {
+/* li>.nav-link:hover:before {
   padding-bottom: 5px;
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
-}
+} */
 
 /* From cssbuttons.io */
 .button-contact .btn {
@@ -211,46 +220,14 @@ li > .nav-link:hover:before {
 } */
 
 /* ========== Section Hero ========== */
-#hero {
-  margin-top: 14vw;
+
+
+@media only screen and (max-width: 991px) {
+  /* ======= Navbar ========= */
 }
 
-#hero .flex__hero {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin: 0 50vw;
-}
-
-.hero__left .bghero,
-.hero__right .bghero {
-  position: relative;
-  width: 33vw;
-  height: 23vw;
-}
-
-.hero__middle img {
-  width: 25vw;
-}
-
-.hero__left .iconhero__laptop {
-  position: absolute;
-  width: 8vw;
-  top: 18vw;
-  left: 8vw;
-}
-.hero__left .iconhero__search {
-  position: absolute;
-  width: 8vw;
-  bottom: 10vw;
-  left: 20vw;
-}
-
-.hero__right .iconhero__globe {
-  position: absolute;
-  width: 11vw;
-  right: 8vw;
-  bottom: 10vw;
+@media only screen and (max-width: 768px) {
+  /* ======= Navbar ========= */
 }
 
 @media only screen and (max-width: 576px) {
