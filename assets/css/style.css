@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 :root {
   --primary-color: #f2fdff;
@@ -65,6 +66,7 @@ body {
 .navbar {
   height: 14vh;
   background-color: transparent !important;
+  font-family: 'Montserrat', sans-serif;
   /* background-color: blueviolet !important; */
 
 }
@@ -344,7 +346,7 @@ li>.nav-link:hover:before {
   }
 
   .wrapper-image__hero .absolute-image {
-    width: 15vw;
+    width: 17vw;
   }
 
   .wrapper-image__hero .tech {
@@ -363,14 +365,14 @@ li>.nav-link:hover:before {
   }
 
   .wrapper-image__hero .search-image {
-    top: 57vh;
+    top: 70vh;
     left: 22vw;
   }
 
   .wrapper-image__hero .globe-image {
-    top: 62vh;
+    top: 77vh;
     right: 7vw;
-    width: 15vw;
+    width: 19vw;
   }
 
   .flex-img .hero-image {
