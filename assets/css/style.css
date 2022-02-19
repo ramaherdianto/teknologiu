@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
@@ -58,9 +57,14 @@ html::-webkit-scrollbar-thumb:hover {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background-color: var(--primary-color);
+  color: var(--font-color-primary);
+  overflow-x: hidden;
 }
+
+/* Circle */
+
 
 /* =========== Navbar =========== */
 .navbar {
@@ -217,7 +221,7 @@ li>.nav-link:hover:before {
 
 .wrapper-image__hero .globe-image {
   top: 45vh;
-  right: 13vw;
+  right: 8vw;
   width: 12vw;
 }
 
@@ -230,6 +234,80 @@ li>.nav-link:hover:before {
 
 .flex-img .hero-image {
   width: 16vw;
+}
+
+/* ======= Section About ========= */
+
+#about {
+  padding: 5vw 10vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.circle {
+  width: 100vw;
+  height: 100vw;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  z-index: -3;
+  top: 0;
+  right: -100vw;
+}
+
+.wrapper-flex__about {
+  display: flex;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 9vw;
+  position: relative;
+}
+
+.doodle {
+  position: absolute;
+  width: 14vw;
+  top: 21vw;
+  right: 28vw;
+}
+
+.typography-about h1 {
+  font-size: 4.5vw;
+  font-family: 'Oswald', sans-serif;
+  color: var(--secondary-color);
+  position: relative;
+}
+
+.typography-about h1::after {
+  content: "";
+  width: 27vw;
+  height: 2.5vw;
+  background-color: #fff;
+  /* background-color: blue; */
+  position: absolute;
+  top: 3vw;
+  right: 2.5vw;
+  z-index: -1;
+  box-shadow: 12px 12px 30px -8px rgba(0, 180, 215, 30%);
+  -webkit-box-shadow: 12px 12px 30px -8px rgba(0, 180, 215, 30%);
+  -moz-box-shadow: 12px 12px 30px -8px rgba(0, 180, 215, 30%);
+}
+
+.typography-about .text-about {
+  margin-top: 5vw;
+  font-size: 1.3vw;
+  font-weight: 500;
+  line-height: 1.9;
+}
+
+.typography-about .hashtag-about {
+  margin-top: 5vw;
+  font-size: 1.3vw;
+  font-weight: 700;
+}
+
+.image-about {
+  width: 35%;
 }
 
 
@@ -378,6 +456,48 @@ li>.nav-link:hover:before {
   .flex-img .hero-image {
     width: 35vw;
   }
+
+  /* ======= Section About ========= */
+  #about {
+    padding: 10vw 10vw;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .wrapper-flex__about {
+    flex-direction: column;
+    gap: 10vw;
+  }
+
+  .doodle {
+    width: 15vw;
+    bottom: 3vw;
+    left: 7vw;
+    right: auto;
+    top: auto;
+  }
+
+  .typography-about h1 {
+    font-size: 6.5vw;
+    text-align: center;
+  }
+
+  .typography-about h1::after {
+    width: 39vw;
+    height: 4vw;
+    top: 4.5vw;
+    right: 10.5vw;
+  }
+
+  .typography-about .text-about, .typography-about .hashtag-about {
+    margin-top: 9vw;
+    font-size: 2.3vw;
+    text-align: center;
+  }
+
+  .image-about {
+    width: 50%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -443,5 +563,35 @@ li>.nav-link:hover:before {
 
   .flex-img .hero-image {
     width: 45vw;
+  }
+
+  /* ======= Section About ========= */
+  .doodle {
+    width: 17vw;
+    bottom: 3vw;
+    left: 7vw;
+    right: auto;
+    top: auto;
+  }
+
+  .typography-about h1 {
+    font-size: 7.5vw;
+  }
+
+  .typography-about h1::after {
+    width: 45vw;
+    height: 5.5vw;
+    top: 4.5vw;
+    right: 6.5vw;
+
+  }
+
+  .typography-about .text-about, .typography-about .hashtag-about {
+    margin-top: 9vw;
+    font-size: 2.6vw;
+  }
+
+  .image-about {
+    width: 50%;
   }
 }
