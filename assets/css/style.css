@@ -428,7 +428,7 @@ li > .nav-link:hover:before {
 .list__whyus .card__whyus {
   display: flex;
   width: 30vw;
-  height: 70vh;
+  height: 65vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -449,7 +449,7 @@ li > .nav-link:hover:before {
   color: var(--font-color-primary);
   font-weight: 500;
   text-align: center;
-  margin-top: 2vw;
+  margin-top: 4vw;
   line-height: 3vw;
 }
 
@@ -672,7 +672,7 @@ li > .nav-link:hover:before {
 
   /* ======= Section Visi & Misi ========= */
   #vimi {
-    padding: 10vw 10vw;
+    padding: 10vw;
   }
 
   .rocket {
@@ -733,6 +733,38 @@ li > .nav-link:hover:before {
 
   .image-vimi {
     width: 40%;
+  }
+
+  /* ===== Section Why Us ======== */
+  #whyus {
+    padding: 10vw 0;
+  }
+
+  #whyus h1 {
+    font-size: 6.5vw;
+  }
+
+  #whyus h1::after {
+    height: 4.7vw;
+  }
+
+  #whyus .whyus__wrapper {
+    margin-top: 10vw;
+  }
+
+  .list__whyus .card__whyus {
+    width: 38vw;
+    height: 34vh;
+  }
+
+  .card__whyus img {
+    width: 22vw;
+    height: 22vw;
+  }
+
+  .card__whyus p {
+    margin-top: 4vw;
+    font-size: 1.7vw;
   }
 }
 
@@ -880,5 +912,68 @@ li > .nav-link:hover:before {
 
   .image-vimi {
     width: 45%;
+  }
+
+  /* ======= Section Why Us ======== */
+  #whyus h1 {
+    font-size: 7.5vw;
+  }
+
+  #whyus .whyus__wrapper {
+    margin-top: 13vw;
+    padding: 0 5vw;
+  }
+
+  .whyus__wrapper .list__whyus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .list__whyus .card__whyus {
+    width: 70vw;
+    height: 50vh;
+    margin-bottom: 15vw;
+    border-radius: 6vw;
+  }
+
+  .card__whyus img {
+    width: 50vw;
+    height: 50vw;
+  }
+
+  .card__whyus p {
+    margin-top: 7vw;
+    font-size: 3.2vw;
+    line-height: 7vw;
+  }
+
+  .list__whyus .icon-whyus-1 {
+    width: 40vw;
+    height: 40vw;
+    right: -16vw;
+    bottom: -5vw;
+  }
+
+  .list__whyus .icon-whyus-2 {
+    width: 15vw;
+    height: 15vw;
+    right: -3vw;
+    top: -3vw;
+  }
+
+  .list__whyus .icon-whyus-3 {
+    width: 15vw;
+    height: 15vw;
+    bottom: 30vw;
+    left: -6vw;
+  }
+
+  .list__whyus .icon-whyus-4 {
+    width: 50vw;
+    height: 50vw;
+    right: -15vw;
+    bottom: -6.5vw;
   }
 }
