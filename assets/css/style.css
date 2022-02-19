@@ -240,8 +240,6 @@ li>.nav-link:hover:before {
 
 #about {
   padding: 5vw 10vw;
-  position: relative;
-  overflow: hidden;
 }
 
 .circle {
@@ -271,7 +269,7 @@ li>.nav-link:hover:before {
   right: 28vw;
 }
 
-.typography-about h1 {
+.typography-about h1, #vimi h1 {
   font-size: 4.5vw;
   font-family: 'Oswald', sans-serif;
   color: var(--secondary-color);
@@ -281,9 +279,8 @@ li>.nav-link:hover:before {
 .typography-about h1::after {
   content: "";
   width: 27vw;
-  height: 2.5vw;
+  height: 3vw;
   background-color: #fff;
-  /* background-color: blue; */
   position: absolute;
   top: 3vw;
   right: 2.5vw;
@@ -310,7 +307,93 @@ li>.nav-link:hover:before {
   width: 35%;
 }
 
+/* ======= Section Visi & Misi ========= */
+#vimi {
+  padding: 5vw 10vw;
+  position: relative;
+}
 
+.rocket {
+  position: absolute;
+  width: 15%;
+  top: -5vw;
+  left: -4vw;
+}
+
+.material {
+  position: absolute;
+  width: 15%;
+  bottom: -10vw;
+  left: -7vw;
+}
+
+#vimi h1 {
+  text-align: center;
+}
+
+#vimi h1::after {
+  content: "";
+  width: 20vw;
+  height: 3vw;
+  background-color: #fff;
+  position: absolute;
+  top: 3vw;
+  right: 20.5vw;
+  z-index: -1;
+  box-shadow: 12px 12px 30px -8px rgba(0, 180, 215, 30%);
+  -webkit-box-shadow: 12px 12px 30px -8px rgba(0, 180, 215, 30%);
+  -moz-box-shadow: 12px 12px 30px -8px rgba(0, 180, 215, 30%);
+}
+
+.flex-vimi {
+  margin-top: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 7vw;
+}
+
+.wrapper-visi h2, .wrapper-misi h2 {
+  font-size: 3vw;
+  font-weight: 700;
+  font-family: 'Oswald', sans-serif;
+  color: var(--secondary-color);
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: var(--secondary-color);
+  position: relative;
+}
+
+.wrapper-visi h2::after, .wrapper-misi h2::after {
+  content: "";
+  width: 7vw;
+  height: 2vw;
+  background-color: #fff;
+  position: absolute;
+  top: 2vw;
+  left: -1vw;
+  z-index: -1;
+  box-shadow: 4px 5px 11px -4px rgba(0, 180, 215, 30%);
+  -webkit-box-shadow: 4px 5px 11px -4px rgba(0, 180, 215, 30%);
+  -moz-box-shadow: 4px 5px 11px -4px rgba(0, 180, 215, 30%);
+}
+
+.wrapper-visi p, .wrapper-misi li {
+  font-weight: 500;
+  font-size: 1.5vw;
+}
+
+.wrapper-visi p {
+  padding-right: 20vw;
+}
+
+.wrapper-misi {
+  margin-top: 8vw;
+}
+
+.image-vimi {
+  width: 20%;
+}
 
 
 @media only screen and (max-width: 991px) {
@@ -498,6 +581,69 @@ li>.nav-link:hover:before {
   .image-about {
     width: 50%;
   }
+
+  /* ======= Section Visi & Misi ========= */
+  #vimi {
+    padding: 10vw 10vw;
+  }
+
+  .rocket {
+    width: 25%;
+    top: -5vw;
+    left: -5vw;
+  }
+
+  .material {
+    width: 25%;
+    bottom: -12vw;
+    left: -12vw;
+  }
+
+  #vimi h1 {
+    font-size: 6.5vw;
+  }
+
+  #vimi h1::after {
+    width: 29vw;
+    height: 4.5vw;
+    top: 4vw;
+    right: 11.5vw;
+  }
+
+  .flex-vimi {
+    margin-top: 8vw;
+    flex-direction: column;
+    align-items: center;
+    gap: 10vw;
+  }
+
+  .wrapper-visi h2, .wrapper-misi h2 {
+    font-size: 4.5vw;
+  }
+
+  .wrapper-visi h2::after, .wrapper-misi h2::after {
+    width: 8.3vw;
+    height: 3vw;
+    top: 2.5vw;
+    left: 0vw;
+  }
+
+  .wrapper-visi p, .wrapper-misi li {
+    font-size: 2.2vw;
+  }
+
+  .wrapper-visi p {
+    padding-right: 0;
+  }
+
+  .wrapper-misi {
+    margin-top: 10vw;
+  }
+
+  .image-vimi {
+    width: 40%;
+  }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -594,4 +740,55 @@ li>.nav-link:hover:before {
   .image-about {
     width: 50%;
   }
+
+  /* ======= Section Visi & Misi ========= */
+  #vimi h1 {
+    font-size: 7.5vw;
+  }
+
+  .rocket {
+    width: 25%;
+    top: -7vw;
+    left: -5vw;
+  }
+
+  .material {
+    left: -11vw;
+  }
+
+  #vimi h1::after {
+    width: 32vw;
+    height: 5vw;
+    top: 6vw;
+    right: 7.5vw;
+  }
+
+  .flex-vimi {
+    margin-top: 10vw;
+  }
+
+  .wrapper-visi h2, .wrapper-misi h2 {
+    font-size: 6.5vw;
+  }
+
+  .wrapper-visi h2::after, .wrapper-misi h2::after {
+    width: 12.3vw;
+    height: 4vw;
+    top: 4.5vw;
+    left: 0vw;
+  }
+
+  .wrapper-visi p, .wrapper-misi li {
+    font-size: 3.2vw;
+  }
+
+  .wrapper-misi {
+    margin-top: 12vw;
+  }
+
+  .image-vimi {
+    width: 45%;
+  }
+
+
 }
