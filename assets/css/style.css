@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
 
 :root {
   --primary-color: #f2fdff;
@@ -57,24 +57,20 @@ html::-webkit-scrollbar-thumb:hover {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: var(--primary-color);
   color: var(--font-color-primary);
   overflow-x: hidden;
 }
 
-
-
 /* Circle */
-
 
 /* =========== Navbar =========== */
 .navbar {
   height: 14vh;
   background-color: transparent !important;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   /* background-color: blueviolet !important; */
-
 }
 
 .navbar-brand img {
@@ -95,13 +91,11 @@ body {
   gap: 3vw;
 }
 
-
 .navbar-nav .btn-mobile {
   display: none;
-
 }
 
-li>.nav-link {
+li > .nav-link {
   position: relative;
   color: var(--font-color-primary);
   text-decoration: none;
@@ -112,7 +106,7 @@ li .nav-link:hover {
   color: var(--font-color-primary);
 }
 
-li>.nav-link:before {
+li > .nav-link:before {
   content: "";
   position: absolute;
   width: 50%;
@@ -127,7 +121,7 @@ li>.nav-link:before {
   transition: all 0.3s ease-in-out 0s;
 }
 
-li>.nav-link:hover:before {
+li > .nav-link:hover:before {
   padding-bottom: 5px;
   visibility: visible;
   -webkit-transform: scaleX(1);
@@ -260,9 +254,11 @@ li>.nav-link:hover:before {
   right: 28vw;
 }
 
-.typography-about h1, #vimi h1 {
+.typography-about h1,
+#vimi h1,
+#whyus h1 {
   font-size: 4.5vw;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   color: var(--secondary-color);
   position: relative;
 }
@@ -344,10 +340,11 @@ li>.nav-link:hover:before {
   gap: 7vw;
 }
 
-.wrapper-visi h2, .wrapper-misi h2 {
+.wrapper-visi h2,
+.wrapper-misi h2 {
   font-size: 3vw;
   font-weight: 700;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   color: var(--secondary-color);
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 2px;
@@ -355,7 +352,8 @@ li>.nav-link:hover:before {
   position: relative;
 }
 
-.wrapper-visi h2::after, .wrapper-misi h2::after {
+.wrapper-visi h2::after,
+.wrapper-misi h2::after {
   content: "";
   width: 7vw;
   height: 2vw;
@@ -369,7 +367,8 @@ li>.nav-link:hover:before {
   -moz-box-shadow: 4px 5px 11px -4px rgba(0, 180, 215, 30%);
 }
 
-.wrapper-visi p, .wrapper-misi li {
+.wrapper-visi p,
+.wrapper-misi li {
   font-weight: 500;
   font-size: 1.5vw;
 }
@@ -386,9 +385,110 @@ li>.nav-link:hover:before {
   width: 20%;
 }
 
+/* ====== Section Why Us ======== */
+#whyus {
+  padding: 5vw 10vw;
+  position: relative;
+}
+
+#whyus h1 {
+  text-align: center;
+}
+
+#whyus h1::after {
+  content: "";
+  width: 29vw;
+  height: 3vw;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  right: 20.5vw;
+  z-index: -1;
+  box-shadow: 12px 12px 30px -8px rgba(0, 180, 215, 30%);
+  -webkit-box-shadow: 12px 12px 30px -8px rgba(0, 180, 215, 30%);
+  -moz-box-shadow: 12px 12px 30px -8px rgba(0, 180, 215, 30%);
+}
+
+#whyus .whyus__wrapper {
+  margin-top: 10vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0 3vw;
+}
+
+.whyus__wrapper .list__whyus {
+  position: relative;
+  margin-right: 5vw;
+  margin-bottom: 7vw;
+}
+
+.list__whyus .card__whyus {
+  display: flex;
+  width: 30vw;
+  height: 70vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1vw 3vw;
+  background: linear-gradient(to right bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0.3));
+  border-radius: 2vw;
+  backdrop-filter: blur(5.9px);
+  -webkit-backdrop-filter: blur(5.9px);
+  z-index: 1;
+}
+
+.card__whyus img {
+  width: 20vw;
+  height: 20vw;
+}
+
+.card__whyus p {
+  color: var(--font-color-primary);
+  font-weight: 500;
+  text-align: center;
+  margin-top: 2vw;
+  line-height: 3vw;
+}
+
+.list__whyus .icon-whyus-1 {
+  width: 15vw;
+  height: 15vw;
+  z-index: -1;
+  position: absolute;
+  bottom: -7vw;
+  right: -6vw;
+}
+
+.list__whyus .icon-whyus-2 {
+  width: 7vw;
+  height: 7vw;
+  z-index: -1;
+  position: absolute;
+  top: -1vw;
+  right: -2vw;
+}
+
+.list__whyus .icon-whyus-3 {
+  width: 7vw;
+  height: 7vw;
+  z-index: -1;
+  position: absolute;
+  bottom: 5vw;
+  left: -3vw;
+}
+.list__whyus .icon-whyus-4 {
+  width: 20vw;
+  height: 20vw;
+  z-index: 1;
+  position: absolute;
+  bottom: -9vw;
+  right: -9.5vw;
+}
 
 @media only screen and (max-width: 991px) {
-
   /* ======= Navbar ========= */
   .navbar {
     height: auto;
@@ -400,7 +500,7 @@ li>.nav-link:hover:before {
   }
 
   .navbar-light .navbar-toggler {
-    color: #00B4D7;
+    color: #00b4d7;
     border: none;
     padding: 0;
     font-size: 1.5em;
@@ -422,7 +522,6 @@ li>.nav-link:hover:before {
 
   .navbar-nav .btn-mobile {
     display: inline-block;
-
   }
 
   .navbar .container-fluid {
@@ -430,7 +529,7 @@ li>.nav-link:hover:before {
     padding: 0 10vw;
   }
 
-  li>.nav-link:before {
+  li > .nav-link:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -445,22 +544,20 @@ li>.nav-link:hover:before {
     transition: all 0.3s ease-in-out 0s;
   }
 
-
-
   /* From cssbuttons.io */
   .button-contact .btn-list {
     font-family: inherit;
     display: inline-block;
     background-color: var(--secondary-color);
     width: 100%;
-    padding: .8em 0;
+    padding: 0.8em 0;
     height: 3.4em;
     position: relative;
     overflow: hidden;
     border: 2px solid var(--secondary-color);
     transition: color 0.5s;
     z-index: 1;
-    font-size: .9em;
+    font-size: 0.9em;
     border-radius: 25em;
     font-weight: 500;
     color: #fff;
@@ -475,7 +572,6 @@ li>.nav-link:hover:before {
     width: 120%;
     border-radius: 50%;
   }
-
 
   .button-contact .btn-list:before {
     bottom: 100%;
@@ -563,7 +659,8 @@ li>.nav-link:hover:before {
     right: 10.5vw;
   }
 
-  .typography-about .text-about, .typography-about .hashtag-about {
+  .typography-about .text-about,
+  .typography-about .hashtag-about {
     margin-top: 9vw;
     font-size: 2.3vw;
     text-align: center;
@@ -608,18 +705,21 @@ li>.nav-link:hover:before {
     gap: 10vw;
   }
 
-  .wrapper-visi h2, .wrapper-misi h2 {
+  .wrapper-visi h2,
+  .wrapper-misi h2 {
     font-size: 4.5vw;
   }
 
-  .wrapper-visi h2::after, .wrapper-misi h2::after {
+  .wrapper-visi h2::after,
+  .wrapper-misi h2::after {
     width: 8.3vw;
     height: 3vw;
     top: 2.5vw;
     left: 0vw;
   }
 
-  .wrapper-visi p, .wrapper-misi li {
+  .wrapper-visi p,
+  .wrapper-misi li {
     font-size: 2.2vw;
   }
 
@@ -634,7 +734,6 @@ li>.nav-link:hover:before {
   .image-vimi {
     width: 40%;
   }
-
 }
 
 @media only screen and (max-width: 768px) {
@@ -642,7 +741,6 @@ li>.nav-link:hover:before {
 }
 
 @media only screen and (max-width: 576px) {
-
   /* ======= Navbar ========= */
   .navbar-brand img {
     width: 25vw;
@@ -661,7 +759,7 @@ li>.nav-link:hover:before {
     margin-top: 1.5vw;
   }
 
-  li>.nav-link {
+  li > .nav-link {
     font-size: 3.4vw;
   }
 
@@ -720,10 +818,10 @@ li>.nav-link:hover:before {
     height: 5.5vw;
     top: 4.5vw;
     right: 6.5vw;
-
   }
 
-  .typography-about .text-about, .typography-about .hashtag-about {
+  .typography-about .text-about,
+  .typography-about .hashtag-about {
     margin-top: 9vw;
     font-size: 2.6vw;
   }
@@ -758,18 +856,21 @@ li>.nav-link:hover:before {
     margin-top: 10vw;
   }
 
-  .wrapper-visi h2, .wrapper-misi h2 {
+  .wrapper-visi h2,
+  .wrapper-misi h2 {
     font-size: 6.5vw;
   }
 
-  .wrapper-visi h2::after, .wrapper-misi h2::after {
+  .wrapper-visi h2::after,
+  .wrapper-misi h2::after {
     width: 12.3vw;
     height: 4vw;
     top: 4.5vw;
     left: 0vw;
   }
 
-  .wrapper-visi p, .wrapper-misi li {
+  .wrapper-visi p,
+  .wrapper-misi li {
     font-size: 3.2vw;
   }
 
@@ -780,6 +881,4 @@ li>.nav-link:hover:before {
   .image-vimi {
     width: 45%;
   }
-
-
 }
