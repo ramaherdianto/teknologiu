@@ -63,6 +63,8 @@ body {
   overflow-x: hidden;
 }
 
+
+
 /* Circle */
 
 
@@ -240,17 +242,6 @@ li>.nav-link:hover:before {
 
 #about {
   padding: 5vw 10vw;
-}
-
-.circle {
-  width: 100vw;
-  height: 100vw;
-  border-radius: 50%;
-  background-color: #fff;
-  position: absolute;
-  z-index: -3;
-  top: 0;
-  right: -100vw;
 }
 
 .wrapper-flex__about {
