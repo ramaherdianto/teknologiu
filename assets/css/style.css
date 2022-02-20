@@ -95,7 +95,7 @@ body {
   display: none;
 }
 
-li > .nav-link {
+li>.nav-link {
   position: relative;
   color: var(--font-color-primary);
   text-decoration: none;
@@ -106,7 +106,7 @@ li .nav-link:hover {
   color: var(--font-color-primary);
 }
 
-li > .nav-link:before {
+li>.nav-link:before {
   content: "";
   position: absolute;
   width: 50%;
@@ -121,7 +121,7 @@ li > .nav-link:before {
   transition: all 0.3s ease-in-out 0s;
 }
 
-li > .nav-link:hover:before {
+li>.nav-link:hover:before {
   padding-bottom: 5px;
   visibility: visible;
   -webkit-transform: scaleX(1);
@@ -442,7 +442,7 @@ li > .nav-link:hover:before {
 
 .card__whyus img {
   width: 20vw;
-  height: 20vw;
+  /* height: 20vw; */
 }
 
 .card__whyus p {
@@ -479,6 +479,7 @@ li > .nav-link:hover:before {
   bottom: 5vw;
   left: -3vw;
 }
+
 .list__whyus .icon-whyus-4 {
   width: 20vw;
   height: 20vw;
@@ -489,6 +490,7 @@ li > .nav-link:hover:before {
 }
 
 @media only screen and (max-width: 991px) {
+
   /* ======= Navbar ========= */
   .navbar {
     height: auto;
@@ -529,7 +531,7 @@ li > .nav-link:hover:before {
     padding: 0 10vw;
   }
 
-  li > .nav-link:before {
+  li>.nav-link:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -759,7 +761,7 @@ li > .nav-link:hover:before {
 
   .card__whyus img {
     width: 22vw;
-    height: 22vw;
+    /* height: 22vw; */
   }
 
   .card__whyus p {
@@ -773,6 +775,7 @@ li > .nav-link:hover:before {
 }
 
 @media only screen and (max-width: 576px) {
+
   /* ======= Navbar ========= */
   .navbar-brand img {
     width: 25vw;
@@ -791,7 +794,7 @@ li > .nav-link:hover:before {
     margin-top: 1.5vw;
   }
 
-  li > .nav-link {
+  li>.nav-link {
     font-size: 3.4vw;
   }
 
@@ -940,7 +943,7 @@ li > .nav-link:hover:before {
 
   .card__whyus img {
     width: 50vw;
-    height: 50vw;
+    /* height: 50vw; */
   }
 
   .card__whyus p {
