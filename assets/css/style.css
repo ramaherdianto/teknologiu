@@ -489,6 +489,87 @@ li>.nav-link:hover:before {
   right: -9.5vw;
 }
 
+/* ========= Section Contact ========= */
+#contact {
+  padding: 5vw 5vw;
+  position: relative;
+}
+
+.partikel {
+  position: absolute;
+  width: 55vw;
+  top: 6vw;
+  left: 37vw;
+}
+
+#contact li {
+  list-style: none;
+}
+
+.wrapper-contact {
+  width: auto;
+  height: auto;
+  padding: 4vw 5vw;
+  border-radius: 3vw;
+  background: rgba(255, 255, 255, 10%);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 50%);
+}
+
+.wrapper-contact h2 {
+  font-size: 4.5vw;
+  font-family: "Oswald", sans-serif;
+  color: var(--secondary-color);
+}
+
+.wrapper-contact p {
+  margin-top: 2vw;
+  font-weight: 500;
+  font-size: 1.5vw;
+  padding-right: 40vw;
+}
+
+#contact input, #contact textarea {
+  margin-top: 2vw;
+  display: block;
+  border: none;
+  background-color: #fff;
+  width: 40vw;
+  padding: 1vw 2vw;
+  border-radius: 1vw;
+  height: auto;
+  font-size: 1.5vw;
+}
+
+#contact textarea {
+  width: 80vw;
+  height: 20vw;
+}
+
+#contact button {
+  margin-top: 2vw;
+  background-color: transparent;
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+  border-radius: 5vw;
+  font-size: 1vw;
+  padding: 1vw 4vw;
+  transition: all 1s;
+}
+
+#contact button:hover {
+  background-color: var(--secondary-color);
+  color: var(--font-color-primary);
+  transition: all 1s;
+}
+
+
+
+
+
+
 @media only screen and (max-width: 991px) {
 
   /* ======= Navbar ========= */
@@ -768,6 +849,46 @@ li>.nav-link:hover:before {
     margin-top: 4vw;
     font-size: 1.7vw;
   }
+
+  /* ========= Section Contact ========= */
+  .partikel {
+    width: 60vw;
+    top: 7vw;
+    left: 34vw;
+  }
+
+  .wrapper-contact h2 {
+    font-size: 6.5vw;
+    text-align: center;
+  }
+
+  .wrapper-contact p {
+    margin-top: 4vw;
+    text-align: center;
+    font-size: 2.2vw;
+    padding-right: 0;
+  }
+
+  #contact input, #contact textarea {
+    margin-top: 4vw;
+    width: 80vw;
+    padding: 3vw 2vw;
+    border-radius: 2vw;
+    font-size: 2.2vw;
+  }
+
+  #contact textarea {
+    height: 30vw;
+  }
+
+  #contact button {
+    margin-top: 4vw;
+    border-radius: 5vw;
+    font-size: 1.7vw;
+    padding: 2vw 8vw;
+    transition: all 1s;
+  }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -978,5 +1099,45 @@ li>.nav-link:hover:before {
     height: 50vw;
     right: -15vw;
     bottom: -6.5vw;
+  }
+
+  /* ========= Section Contact ========= */
+  .partikel {
+    width: 60vw;
+    top: 21vw;
+    left: 31vw;
+  }
+
+  .wrapper-contact {
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+  }
+
+  .wrapper-contact h2 {
+    font-size: 7.5vw;
+  }
+
+  .wrapper-contact p {
+    margin-top: 5vw;
+    font-size: 3.2vw;
+    line-height: 1.5;
+  }
+
+  #contact input, #contact textarea {
+    margin-top: 5vw;
+    padding: 4vw 3vw;
+    border-radius: 2vw;
+    font-size: 3.2vw;
+  }
+
+  #contact textarea {
+    height: 40vw;
+  }
+
+  #contact button {
+    margin-top: 5vw;
+    font-size: 2.5vw;
+    padding: 2vw 10vw;
+    transition: all 1s;
   }
 }
