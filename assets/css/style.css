@@ -548,7 +548,7 @@ li>.nav-link:hover:before {
   height: 20vw;
 }
 
-#contact button {
+#contact .btn-contact {
   margin-top: 2vw;
   background-color: transparent;
   border: 1px solid var(--secondary-color);
@@ -559,7 +559,7 @@ li>.nav-link:hover:before {
   transition: all 1s;
 }
 
-#contact button:hover {
+#contact .btn-contact:hover {
   background-color: var(--secondary-color);
   color: var(--font-color-primary);
   transition: all 1s;
@@ -881,7 +881,7 @@ li>.nav-link:hover:before {
     height: 30vw;
   }
 
-  #contact button {
+  #contact .btn-contact {
     margin-top: 4vw;
     border-radius: 5vw;
     font-size: 1.7vw;
@@ -1134,10 +1134,14 @@ li>.nav-link:hover:before {
     height: 40vw;
   }
 
-  #contact button {
+  #contact .btn-contact {
     margin-top: 5vw;
     font-size: 2.5vw;
     padding: 2vw 10vw;
     transition: all 1s;
+  }
+
+  .my-alert {
+    font-size: 2.5vw;
   }
 }
