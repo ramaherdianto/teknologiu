@@ -71,6 +71,14 @@ body {
   background-color: transparent !important;
   font-family: "Montserrat", sans-serif;
   /* background-color: blueviolet !important; */
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar.active {
+  background: var(--primary-color) !important;
+  /* -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25); */
 }
 
 .navbar-brand img {
@@ -95,7 +103,7 @@ body {
   display: none;
 }
 
-li>.nav-link {
+li > .nav-link {
   position: relative;
   color: var(--font-color-primary);
   text-decoration: none;
@@ -106,7 +114,7 @@ li .nav-link:hover {
   color: var(--font-color-primary);
 }
 
-li>.nav-link:before {
+li > .nav-link:before {
   content: "";
   position: absolute;
   width: 50%;
@@ -121,7 +129,7 @@ li>.nav-link:before {
   transition: all 0.3s ease-in-out 0s;
 }
 
-li>.nav-link:hover:before {
+li > .nav-link:hover:before {
   padding-bottom: 5px;
   visibility: visible;
   -webkit-transform: scaleX(1);
@@ -531,7 +539,8 @@ li>.nav-link:hover:before {
   padding-right: 40vw;
 }
 
-#contact input, #contact textarea {
+#contact input,
+#contact textarea {
   margin-top: 2vw;
   display: block;
   border: none;
@@ -555,7 +564,7 @@ li>.nav-link:hover:before {
   color: var(--secondary-color);
   border-radius: 5vw;
   font-size: 1vw;
-  padding: 1vw 4vw;
+  padding: 1vw 4.5vw;
   transition: all 1s;
 }
 
@@ -565,13 +574,67 @@ li>.nav-link:hover:before {
   transition: all 1s;
 }
 
+/* From cssbuttons.io by @adamgiebl */
+#contact .btn-kirim {
+  font-family: inherit;
+  font-size: 1vw;
+  margin-top: 2vw;
+  background: var(--primary-color);
+  color: var(--tertiary-color);
+  padding: 1vw 3vw;
+  /* padding-left: 0.9em; */
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--tertiary-color);
+  border-radius: 5vw;
+  overflow: hidden;
+  transition: all 0.2s;
+}
 
+#contact .btn-kirim:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
 
+.btn-kirim span {
+  display: block;
+  margin-left: 1vw;
+  transition: all 0.3s ease-in-out;
+}
 
+.btn-kirim svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
 
+.btn-kirim:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.btn-kirim:hover svg {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+.btn-kirim:hover span {
+  transform: translateX(10em);
+}
+
+.btn-kirim:active {
+  transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+
+  to {
+    transform: translateY(-0.1em);
+  }
+}
 
 @media only screen and (max-width: 991px) {
-
   /* ======= Navbar ========= */
   .navbar {
     height: auto;
@@ -612,7 +675,7 @@ li>.nav-link:hover:before {
     padding: 0 10vw;
   }
 
-  li>.nav-link:before {
+  li > .nav-link:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -869,7 +932,8 @@ li>.nav-link:hover:before {
     padding-right: 0;
   }
 
-  #contact input, #contact textarea {
+  #contact input,
+  #contact textarea {
     margin-top: 4vw;
     width: 80vw;
     padding: 3vw 2vw;
@@ -888,7 +952,6 @@ li>.nav-link:hover:before {
     padding: 2vw 8vw;
     transition: all 1s;
   }
-
 }
 
 @media only screen and (max-width: 768px) {
@@ -896,7 +959,6 @@ li>.nav-link:hover:before {
 }
 
 @media only screen and (max-width: 576px) {
-
   /* ======= Navbar ========= */
   .navbar-brand img {
     width: 25vw;
@@ -915,7 +977,7 @@ li>.nav-link:hover:before {
     margin-top: 1.5vw;
   }
 
-  li>.nav-link {
+  li > .nav-link {
     font-size: 3.4vw;
   }
 
@@ -1123,7 +1185,8 @@ li>.nav-link:hover:before {
     line-height: 1.5;
   }
 
-  #contact input, #contact textarea {
+  #contact input,
+  #contact textarea {
     margin-top: 5vw;
     padding: 4vw 3vw;
     border-radius: 2vw;
