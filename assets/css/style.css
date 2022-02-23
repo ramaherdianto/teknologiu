@@ -56,6 +56,54 @@ html::-webkit-scrollbar-thumb:hover {
   }
 }
 
+/*===============================================
+# Preloader
+===============================================*/
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #fff;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid var(--tertiary-color);
+  border-top-color: #e5e5e5;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   background-color: var(--primary-color);
@@ -243,7 +291,7 @@ li > .nav-link:hover:before {
 /* ======= Section About ========= */
 
 #about {
-  padding: 5vw 10vw;
+  padding: 7vw 10vw;
 }
 
 .wrapper-flex__about {
@@ -304,7 +352,7 @@ li > .nav-link:hover:before {
 
 /* ======= Section Visi & Misi ========= */
 #vimi {
-  padding: 5vw 10vw;
+  padding: 7vw 10vw;
   position: relative;
 }
 
@@ -395,7 +443,7 @@ li > .nav-link:hover:before {
 
 /* ====== Section Why Us ======== */
 #whyus {
-  padding: 5vw 10vw;
+  padding: 7vw 10vw;
   position: relative;
 }
 
@@ -613,7 +661,7 @@ li > .nav-link:hover:before {
 }
 
 .btn-kirim:hover svg {
-  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+  transform: translateX(1.8em) rotate(45deg) scale(1.1);
 }
 
 .btn-kirim:hover span {
