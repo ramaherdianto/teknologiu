@@ -153,7 +153,7 @@ body {
   background-color: transparent !important;
   font-family: "Montserrat", sans-serif;
   /* background-color: blueviolet !important; */
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in;
 }
 
 .navbar.active {
@@ -161,6 +161,7 @@ body {
   /* -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25); */
+  transition: all 0.3s ease-out;
 }
 
 .navbar-brand img {
@@ -506,7 +507,8 @@ li > .nav-link:hover:before {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 0 3vw;
+  padding: 0 0vw 0 5.5vw;
+  position: relative;
 }
 
 .whyus__wrapper .list__whyus {
@@ -723,18 +725,21 @@ li > .nav-link:hover:before {
   .navbar {
     height: auto;
     background-color: var(--primary-color) !important;
+    padding: 2vw 0;
   }
 
   .navbar-brand img {
-    width: 7em;
+    width: 17vw;
+    margin-left: -5vw;
   }
 
   .navbar-light .navbar-toggler {
-    color: #00b4d7;
+    color: var(--tertiary-color);
     border: none;
     padding: 0;
-    font-size: 1.5em;
+    font-size: 3vw;
     font-weight: bold;
+    margin-right: -5vw;
   }
 
   .navbar-expand-lg .navbar-nav {
@@ -1045,12 +1050,14 @@ li > .nav-link:hover:before {
 @media only screen and (max-width: 576px) {
   /* ======= Navbar ========= */
   .navbar-brand img {
-    width: 25vw;
+    width: 26vw;
+    margin-left: -5vw;
   }
 
   .navbar-light .navbar-toggler {
-    font-size: 1.5em;
-    font-size: 4.4vw;
+    font-size: 4vw;
+    margin-right: -5vw;
+    color: var(--tertiary-color);
   }
 
   .navbar-expand-lg .navbar-nav {
@@ -1185,13 +1192,18 @@ li > .nav-link:hover:before {
   }
 
   /* ======= Section Why Us ======== */
+  #whyus {
+    /* position: relative; */
+    overflow-x: hidden;
+  }
+
   #whyus h1 {
     font-size: 7.5vw;
   }
 
   #whyus .whyus__wrapper {
     margin-top: 13vw;
-    padding: 0 5vw;
+    padding: 0 0 0 5.5vw;
   }
 
   .whyus__wrapper .list__whyus {
