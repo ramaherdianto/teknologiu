@@ -660,7 +660,6 @@ li > .nav-link:hover:before {
   transition: all 1s;
 }
 
-/* From cssbuttons.io by @adamgiebl */
 #contact .btn-kirim {
   font-family: inherit;
   font-size: 1vw;
@@ -668,7 +667,6 @@ li > .nav-link:hover:before {
   background: var(--primary-color);
   color: var(--tertiary-color);
   padding: 1vw 3vw;
-  /* padding-left: 0.9em; */
   display: flex;
   align-items: center;
   border: 1px solid var(--tertiary-color);
@@ -718,6 +716,101 @@ li > .nav-link:hover:before {
   to {
     transform: translateY(-0.1em);
   }
+}
+
+/* ======== Section Footer ======= */
+footer {
+  padding: 8vw 10vw 0 10vw;
+  margin-top: 10vw;
+}
+
+footer .footer__wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10vw;
+}
+
+.footer__wrapper .profile__footer,
+.footer__wrapper .networks__footer {
+  width: 30%;
+}
+
+.profile__footer .logo__footer {
+  width: 12vw;
+}
+
+.profile__footer a .logo__maskot {
+  display: none;
+}
+
+.profile__footer p {
+  margin-top: 2vw;
+  font-size: 1vw;
+}
+
+.profile__footer p span {
+  font-weight: bold;
+}
+
+.maskot__footer img {
+  width: 14vw;
+}
+
+.footer__wrapper .networks__footer {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.networks__footer .socials__wrapper {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1vw;
+  transition: all 0.3s ease-in;
+  margin-top: 1vw;
+}
+
+.socials__wrapper a {
+  background-color: var(--tertiary-color);
+  color: #fff;
+  width: 2.5vw;
+  height: 2.5vw;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.3s ease-in;
+}
+
+.socials__wrapper a:hover {
+  background-color: #fff;
+  color: var(--tertiary-color);
+  text-decoration: underline;
+  transition: all 0.3s ease-out;
+}
+
+.networks__footer p {
+  margin-top: 0.7vw;
+  font-size: 1vw;
+}
+
+.networks__footer p.header__networks {
+  font-size: 1.7vw;
+  font-weight: 600;
+}
+
+.networks__footer .to-the-future {
+  font-weight: 600;
+  font-size: 1.2vw;
+  margin-top: 2vw;
+}
+
+footer p#copyright {
+  font-size: 1vw;
+  margin-top: 10vw;
+  margin-bottom: 0.5vw;
 }
 
 @media only screen and (max-width: 991px) {

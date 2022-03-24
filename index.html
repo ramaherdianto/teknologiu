@@ -153,13 +153,13 @@
       <div class="wrapper-contact">
         <h2>Hubungi Kami</h2>
         <p>Jika ada yang ingin ditanyakan, jangan ragu untuk memberitahu kami melalui email dibawah ini.</p>
-        <div class="alert alert-success alert-dismissible fade show d-flex align-items-center my-alert d-none" role="alert">
+        <div class="alert alert-info alert-dismissible fade show d-flex align-items-center my-alert d-none" role="alert">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-square-fill me-2" viewBox="0 0 16 16">
             <path
               d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm10.03 4.97a.75.75 0 0 1 .011 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.75.75 0 0 1 1.08-.022z"
             />
           </svg>
-          <strong>Terimakasih! </strong> Pesan anda sudah kami terima.
+          <strong> Terimakasih!</strong><span>Pesan anda sudah kami terima.</span>
           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
 
@@ -186,36 +186,52 @@
     </section>
     <!-- ========= End Section Contact ========== -->
 
+    <!-- ========= Section Footer ============= -->
+    <footer>
+      <div class="footer__wrapper">
+        <div class="profile__footer">
+          <a href="/index.html">
+            <img src="assets/images/maskot.png" class="logo__maskot" alt="Maskot TeknologiU" />
+            <img src="assets/images/logo.png" class="logo__footer" alt="TeknologiU" />
+          </a>
+
+          <p>TeknologiU bertujuan menjadi media yang menarik dan mudah diakses oleh anak muda serta membantu mereka untuk mencapai karir di bidang teknologi.</p>
+          <p>
+            <span>Business enquires :</span><br />
+
+            teknologiU@gmail.com
+          </p>
+        </div>
+        <div class="maskot__footer">
+          <img src="assets/images/maskot.png" alt="Maskot TeknologiU" />
+        </div>
+        <div class="networks__footer">
+          <p class="header__networks">Our Social Networks</p>
+          <p>Mau tahu lebih banyak? Jangan lupa ikuti beberapa jaringan sosial kami berikut.</p>
+          <div class="socials__wrapper">
+            <a href="https://instagram.com/teknologiu?utm_medium=copy_link" target="_blank">
+              <i class="ri-instagram-line"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/teknologiu/" target="_blank">
+              <i class="ri-linkedin-line"></i>
+            </a>
+            <a href="#" target="_blank">
+              <i class="ri-whatsapp-line"></i>
+            </a>
+            <a href="#" target="_blank">
+              <i class="ri-mail-line"></i>
+            </a>
+          </div>
+          <p class="to-the-future">#ToTheFutureWithU</p>
+        </div>
+      </div>
+      <p id="copyright" class="text-center"></p>
+    </footer>
+    <!-- ========= End Section Footer ============= -->
+
     <!-- MY JS -->
     <script src="assets/js/main.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-    <script>
-      const scriptURL = "https://script.google.com/macros/s/AKfycby6yqBLRi8c7ePJRyjCMD44_PHUinwD5FucICOpsh2E-wgcF3DzRHSuhpV0fqlb-rYXgA/exec";
-      const form = document.forms["contact-form"];
-      const btnKirim = document.querySelector(".btn-kirim");
-      const btnLoading = document.querySelector(".btn-loading");
-      const myAlert = document.querySelector(".my-alert");
-
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        // ketika tombol submit di klik
-        // tampilkan tombol loading, hilangkan tombol kirim
-        btnLoading.classList.toggle("d-none");
-        btnKirim.classList.toggle("d-none");
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => {
-            btnLoading.classList.toggle("d-none");
-            btnKirim.classList.toggle("d-none");
-            // tampilkan alert
-            myAlert.classList.toggle("d-none");
-            // reset form
-            form.reset();
-            console.log("Success!", response);
-          })
-          .catch((error) => console.error("Error!", error.message));
-      });
-    </script>
   </body>
 </html>
