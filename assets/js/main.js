@@ -54,3 +54,8 @@ form.addEventListener("submit", (e) => {
 // Tahun Copyright
 let copyright = new Date();
 document.getElementById("copyright").innerHTML = "© " + copyright.getFullYear() + " <b>TeknologiU.</b> " + "All rights reserved.";
+
+// Aos JS
+AOS.init({
+  once: true,
+});

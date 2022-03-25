@@ -781,12 +781,12 @@ footer .footer__wrapper {
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  transition: all 0.3s ease-in;
+  transition: all 0.5s ease-in;
 }
 
 .socials__wrapper a:hover {
   transform: translateY(-1vw);
-  transition: all 0.3s ease-out;
+  transition: all 0.5s ease-out;
 }
 
 .networks__footer p {
@@ -1316,6 +1316,7 @@ footer p#copyright {
   /* ======= Section Visi & Misi ========= */
   #vimi {
     padding-top: 18vw;
+    margin-top: 20vw;
   }
 
   #vimi h1 {
