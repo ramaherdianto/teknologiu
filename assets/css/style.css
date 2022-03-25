@@ -1280,6 +1280,10 @@ footer p#copyright {
   }
 
   /* ======= Section About ========= */
+  #about {
+    padding-top: 18vw;
+  }
+
   .doodle {
     width: 17vw;
     bottom: 3vw;
@@ -1310,6 +1314,10 @@ footer p#copyright {
   }
 
   /* ======= Section Visi & Misi ========= */
+  #vimi {
+    padding-top: 18vw;
+  }
+
   #vimi h1 {
     font-size: 7.5vw;
   }
@@ -1363,7 +1371,7 @@ footer p#copyright {
 
   /* ======= Section Why Us ======== */
   #whyus {
-    /* position: relative; */
+    padding-top: 18vw;
     overflow-x: hidden;
   }
 
@@ -1430,6 +1438,10 @@ footer p#copyright {
   }
 
   /* ========= Section Contact ========= */
+  #contact {
+    padding-top: 18vw;
+  }
+
   .partikel {
     width: 60vw;
     top: 21vw;
