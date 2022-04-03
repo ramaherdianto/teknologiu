@@ -59,19 +59,3 @@ document.getElementById("copyright").innerHTML = "© " + copyright.getFullYear()
 AOS.init({
   once: true,
 });
-
-// Hero Animasi Typing
-let i = 0,
-  text;
-
-text = "Halo Uceers, selamat datang!";
-
-let typing = () => {
-  if (i < text.length) {
-    document.querySelector(".typing").innerHTML += text.charAt(i);
-    i++;
-    setTimeout(typing, 80);
-  }
-};
-
-typing();
