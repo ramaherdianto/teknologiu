@@ -61,12 +61,10 @@ AOS.init({
 });
 
 // Hero Animasi Typing
-let i = 0,
-  text;
+let i = 0;
+let text = "Halo Uceers, selamat datang!";
 
-text = "Halo Uceers, selamat datang!";
-
-let typing = () => {
+const typing = () => {
   if (i < text.length) {
     document.querySelector(".typing").innerHTML += text.charAt(i);
     i++;
