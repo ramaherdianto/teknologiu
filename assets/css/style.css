@@ -314,6 +314,7 @@ li > .nav-link:hover:before {
   border-right: 0;
   margin-left: -10vw;
   transform: rotate(-13deg);
+  z-index: -1;
 }
 
 .flex-img .hero-image {
